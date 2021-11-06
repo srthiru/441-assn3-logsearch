@@ -20,9 +20,10 @@ The architecture of the project is as below:
 ### Structure of the project
 
 The task has been split into 4 sbt projects. The structure of the repo is as follows:
-* The *logsearch-service* project consists of the two server implementations using gRPC and Finch
-* The *logsearch-client-rest* project consists of the client implementation using Finagle HTTP to make an API call to the REST API implemented using Finch
+* The *logsearch-service-grpc* project consists of the server implementation using gRPC and protobuf
+* The *logsearch-server-finch* project consists of the finch RESTful server implementation
 * The *logsearch-client-grpc* project consists of the client implementation corresponding to the gRPC server
+* The *logsearch-client-rest* project consists of the client implementation using Finagle HTTP to make an API call to the REST API implemented using Finch
 * The *logsearch-lambda* project consists of the implementation of the lambda function that was deployed
 * Additionally, there is also a python script to update a hash lookup table that will be used by the lambda function
 
