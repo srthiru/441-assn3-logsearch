@@ -1,0 +1,3 @@
+class SearchWorkerS3 {
+
+}
