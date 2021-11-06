@@ -76,10 +76,10 @@ This functionality for search interval across multiple files has been implemente
 
 The log generator was deployed to EC2 and the log files generated were moved to S3 buckets. A lambda function that triggers when ".log" files get uploaded to S3 was used to update the Hash lookup. Currently, the log files were moved indirectly to the S3 buckets.
 
-An implementation using logback framework was considered similar to the approach specified (here)[https://github.com/mweagle/Logpig] by extending the existing `TimeBasedRollingWindowPolicy` class of the logback framework, but ultimately it was not implemented.
+An implementation using logback framework was considered similar to the approach specified [here](https://github.com/mweagle/Logpig) by extending the existing `TimeBasedRollingWindowPolicy` class of the logback framework, but ultimately it was not implemented.
 
 ### Demo
-Please find the youtube demo (here)[https://www.youtube.com/watch?v=mnjlwxpp39I&feature=youtu.be]
+Please find the youtube demo [here](https://www.youtube.com/watch?v=mnjlwxpp39I&feature=youtu.be)
 
 ### Deployment
 
@@ -89,12 +89,13 @@ Logsearch can be performed by making the following request - `https://6hywkax1t9
 
 The current log files in S3 are from 2021-10-19 between 23:37:11 and 23:37:59; and 2021-11-05 between 01:28:57 and 01:33:23.
 
+The output will be a HTTP status 200 along with the MD5 hashcode of retreived log messages and if no messages were present for the given interval, the output will be a HTTP 405 code.
+
 ### References
 
 Some useful resources for the development:
 
-* This stackoverflow (discussion)[https://stackoverflow.com/questions/10010151/how-to-perform-a-binary-search-of-a-text-file] that gave the idea for the random search that was modifed for the purpose of S3. The solution that was used was actually the last response that was not the accepted answer.
-* (Reference)[https://docs.aws.amazon.com/code-samples/latest/catalog/java-s3-src-main-java-aws-example-s3-GetObject2.java.html
-(4 liked)EditedGetObject2.java - AWS Code SampleGetObject.java demonstrates several ways to retrieve an entire or partial S3 object.docs.aws.amazon.com<https://teams.microsoft.com/l/message/19:6438a8ea7fdd42a8961ef47f84440f1a@thread.tacv2/1636152853301?tenantId=e202cd47-7a56-4baa-99e3-e3b71a7c77dd&amp;groupId=2892ac01-d5be-4bbd-8632-41431594f310&amp;parentMessageId=1636128991541&amp;teamName=O365-CS441-Fall2021&amp;channelName=Homework3&amp;createdTime=1636152853301>] for S3 file operations
-* ScalaPB Grpc client server (example)[https://scalapb.github.io/docs/getting-started]
-* Followed (this)[https://www.baeldung.com/scala/finch-rest-apis] guide in creating the Finch server
+* This stackoverflow [discussion](https://stackoverflow.com/questions/10010151/how-to-perform-a-binary-search-of-a-text-file) that gave the idea for the random search that was modifed for the purpose of S3. The solution that was used was actually the last response that was not the accepted answer.
+* [Reference](https://docs.aws.amazon.com/code-samples/latest/catalog/java-s3-src-main-java-aws-example-s3-GetObject2.java.html) for S3 file operations
+* ScalaPB Grpc client server [example](https://scalapb.github.io/docs/getting-started)
+* Followed [this](https://www.baeldung.com/scala/finch-rest-apis) guide in creating the Finch server

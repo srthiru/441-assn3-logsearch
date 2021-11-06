@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package rpcservice.protos;
+
+// The greeting service definition.
+service Searcher {
+  // Sends a greeting
+  rpc searchLog (SearchRequest) returns (SearchReply) {}
+}
+
+// The request message containing the interval request value.
+message SearchRequest {
+  string interval = 1;
+  string delta = 2;
+}
+
+// The response message containing the hash value generated from the messages
+message SearchReply {
+  string message = 1;
+}

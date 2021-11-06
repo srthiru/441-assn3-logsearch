@@ -1,24 +1,21 @@
-import HelperUtils.CreateLogger
-
 import java.io.{File, RandomAccessFile}
 import java.nio.charset.StandardCharsets
+import java.util.logging.Logger
 import scala.annotation.tailrec
 
-// ref: https://stackoverflow.com/questions/10010151/how-to-perform-a-binary-search-of-a-text-file;
-// https://stackoverflow.com/questions/54240131/read-until-specific-index-in-a-file-with-randomaccessfile-java
 
+// Please ignore this file, was used for testing binary search locally using RandomAccessFile
 class SearchWorker {
 
-  val logBoy = CreateLogger(this.getClass)
+  val logger = Logger.getLogger(this.getClass.getName)
 
   def SearchWorker{
-
 
   }
 
   def getLogs(file: String, verb: String, startInterval: String = "", endInterval: String = ""): List[String] = {
 
-    logBoy.info("Reading messages from file " + file)
+    logger.info("Reading messages from file " + file)
     val fileToRead = new File(file)
     val raf = new RandomAccessFile(fileToRead, "r")
 
@@ -35,19 +32,19 @@ class SearchWorker {
 
       case "from" =>
         val pos = seek(raf, startInterval, "after", length)
-        logBoy.info("Reading until " + startInterval)
+        logger.info("Reading until " + startInterval)
         raf.seek(pos)
         val messages = readUntil(raf, List())
-        logBoy.info(f"Read ${messages.length} messages between interval")
+        logger.info(f"Read ${messages.length} messages between interval")
         messages
 
       case "to" =>
-        logBoy.info("Reading messages from the beginning of file till " + endInterval)
+        logger.info("Reading messages from the beginning of file till " + endInterval)
         raf.seek(0)
         val messages = readUntil(raf, List(), endInterval)
         messages
 
-      case _ => logBoy.error("search verb not found - " + verb)
+      case _ => logger.severe("search verb not found - " + verb)
                 List()
 
     }

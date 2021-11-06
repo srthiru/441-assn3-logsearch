@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating cache (input changed)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\src_managed\main[0m
+[0m[[0m[0mdebug[0m] [0m[0mprotoc options:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCompiling schema E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\src\main\protobuf\searcher.proto[0m

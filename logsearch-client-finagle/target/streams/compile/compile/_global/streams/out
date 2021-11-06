@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mE:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\SearchClientRest\src\main\scala\RestClient.scala:30:38: could not find implicit value for parameter system: akka.actor.ClassicActorSystemProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    val dispatch = singleRequest(Http().connectionTo("doc.akka.io").http2)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\SearchClientRest\src\main\scala\RestClient.scala:52:13: could not find implicit value for parameter materializer: akka.stream.Materializer[0m
+[0m[[0m[31merror[0m] [0m[0m        .run()[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

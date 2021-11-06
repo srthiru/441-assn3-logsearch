@@ -1,0 +1,148 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\srthi\AppData\Local\Temp\idea4.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\srthi\AppData\Local\Temp\idea4.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.5 (Oracle Corporation Java 11.0.12)
+[debug]       Load.loadUnit: plugins took 85.5502ms
+[debug]       Load.loadUnit: defsScala took 0.2358ms
+[debug] [Loading] Scanning directory C:\Users\srthi\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\srthi\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 28.1245 ms
+[debug]           Load.resolveProject(global-plugins) took 78.712ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\srthi\.sbt\1.0\plugins, plugins: List(<none>))) took 131.343ms
+[debug] [Loading] Done in C:\Users\srthi\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 148.4035ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.288ms
+[debug]     Load.loadUnit(file:/C:/Users/srthi/.sbt/1.0/plugins/, ...) took 242.2247ms
+[debug]   Load.apply: load took 401.3636ms
+[debug]   Load.apply: resolveProjects took 5.62ms
+[debug]   Load.apply: finalTransforms took 57.252ms
+[debug]   Load.apply: config.delegates took 7.2307ms
+[debug]   Load.apply: Def.make(settings)... took 416.8587ms
+[debug]   Load.apply: structureIndex took 126.0161ms
+[debug]   Load.apply: mkStreams took 2.0228ms
+[info] loading global plugins from C:\Users\srthi\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2673.5832ms
+[debug]           Load.loadUnit: plugins took 24.5525ms
+[debug]           Load.loadUnit: defsScala took 0.0037ms
+[debug] [Loading] Scanning directory E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service\project
+[debug]             Load.loadUnit: mkEval took 7.1646ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.4121 ms
+[info] loading settings for project logsearch-service-build from plugins.sbt,idea4.sbt ...
+[debug]               Load.resolveProject(logsearch-service-build) took 2.6299ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id logsearch-service-build, base: E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service\project, plugins: List(<none>))) took 4.6433ms
+[debug] [Loading] Done in E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service\project, returning: (logsearch-service-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 2289.0068ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.3822ms
+[debug]         Load.loadUnit(file:/E:/MS/Fall%202021/CS%20441/Assignments/3/logsearch-service/project/, ...) took 2318.9063ms
+[debug]       Load.apply: load took 2320.0154ms
+[debug]       Load.apply: resolveProjects took 0.0815ms
+[debug]       Load.apply: finalTransforms took 9.3448ms
+[debug]       Load.apply: config.delegates took 0.4892ms
+[debug]       Load.apply: Def.make(settings)... took 80.5528ms
+[debug]       Load.apply: structureIndex took 25.844ms
+[debug]       Load.apply: mkStreams took 0.0027ms
+[info] loading project definition from E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 4794.7168ms
+[debug]     Load.loadUnit: defsScala took 0.0031ms
+[debug] [Loading] Scanning directory E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service
+[debug]       Load.loadUnit: mkEval took 0.1901ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(akka.grpc.sbt.AkkaGrpcPlugin), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(akka.grpc.sbt.AkkaGrpcPlugin),Set(Atom(sbtprotoc.ProtocPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbtprotoc.ProtocPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.portablescala.sbtplatformdeps.PlatformDepsPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtprotoc.ProtocPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.portablescala.sbtplatformdeps.PlatformDepsPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,akka.grpc.sbt.AkkaGrpcPlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbtprotoc.ProtocPlugin,sbt.plugins.JvmPlugin,org.portablescala.sbtplatformdeps.PlatformDepsPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 2.8376 ms
+[info] loading settings for project logsearch-service from build.sbt ...
+[debug]         Load.resolveProject(logsearch-service) took 64.6168ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id logsearch-service, base: E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service, plugins: List(<none>))) took 69.3124ms
+[debug] [Loading] Done in E:\MS\Fall 2021\CS 441\Assignments\3\logsearch-service, returning: (logsearch-service)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1556.2859ms
+[debug]     Load.loadUnit: cleanEvalClasses took 14.6677ms
+[debug]   Load.loadUnit(file:/E:/MS/Fall%202021/CS%20441/Assignments/3/logsearch-service/, ...) took 6366.3922ms
+[debug] Load.apply: load took 6367.9499ms
+[debug] Load.apply: resolveProjects took 0.0904ms
+[debug] Load.apply: finalTransforms took 26.8082ms
+[debug] Load.apply: config.delegates took 0.3273ms
+[debug] Load.apply: Def.make(settings)... took 100.3391ms
+[debug] Load.apply: structureIndex took 24.2117ms
+[debug] Load.apply: mkStreams took 0.0023ms
+[info] set current project to logsearch-service (in build file:/E:/MS/Fall%202021/CS%20441/Assignments/3/logsearch-service/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 61589 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 61589, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to logsearch-service (in build file:/E:/MS/Fall%202021/CS%20441/Assignments/3/logsearch-service/)
+[debug] > Exec(idea-shell, None, None)

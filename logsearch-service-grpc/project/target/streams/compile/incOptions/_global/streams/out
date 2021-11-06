@@ -1,0 +1,2 @@
+[debug] Created transactional ClassFileManager with tempDir = E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service-grpc\project\target\scala-2.12\sbt-1.0\classes.bak
+[debug] Removing the temporary directory used for backing up class files: E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service-grpc\project\target\scala-2.12\sbt-1.0\classes.bak

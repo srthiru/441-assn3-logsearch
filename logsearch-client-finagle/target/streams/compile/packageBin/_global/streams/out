@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\SearchClientRest\target\scala-2.13\logsearch-rest-client_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\SearchClientRest\target\scala-2.13\classes\application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\SearchClientRest\target\scala-2.13\classes\RestClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\SearchClientRest\target\scala-2.13\classes\RestClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

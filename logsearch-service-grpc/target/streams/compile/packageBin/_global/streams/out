@@ -1,0 +1,59 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\logsearch-service_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogSearcherService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\LogSearcherService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogSearcherService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\LogSearcherService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$Searcher$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$Searcher$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$Searcher$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$Searcher$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$Searcher.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$Searcher.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$SearcherBlockingClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$SearcherBlockingClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$SearcherBlockingStub$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$SearcherBlockingStub$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$SearcherBlockingStub.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$SearcherBlockingStub.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$SearcherStub$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$SearcherStub$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc$SearcherStub.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc$SearcherStub.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherGrpc.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherGrpc.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherProto$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherProto$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearcherProto.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearcherProto.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearchReply$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearchReply$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearchReply$SearchReplyLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearchReply$SearchReplyLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearchReply.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearchReply.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearchRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearchRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearchRequest$SearchRequestLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearchRequest$SearchRequestLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\protos\searcher\SearchRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\protos\searcher\SearchRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\SearcherRpcServer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\SearcherRpcServer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\SearcherRpcServer$SearcherRpcService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\SearcherRpcServer$SearcherRpcService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rpcservice\SearcherRpcServer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\rpcservice\SearcherRpcServer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	searcher.proto[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\MS\Fall 2021\CS 441\Assignments\3\assn3-logsearch\logsearch-service\target\scala-2.13\classes\searcher.proto[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
