@@ -1,5 +1,0 @@
-package rest
-
-object FinchServer {
-
-}
