@@ -13,6 +13,9 @@ Task:
 
 ### Architecture
 
+The architecture of the project is as below:
+
+![image](https://user-images.githubusercontent.com/33444577/140598535-1e679802-8a8f-45d9-aaad-ab0add75c3e5.png)
 
 ### Structure of the project
 
@@ -30,8 +33,68 @@ To run the application, first start the logsearch-service to start both the gRPC
 For all of the above, use the command `sbt-run` to run the respective projects.
 
 ### Implementation details and limitations
-1. 
-### Dependencies
+
+#### Search
+
+The log messages are found using binary search. By using the S3Object's `GetObjectRequest.withinRange` S3 API method, we are able to access a range of bytes from the file.
+
+We can use the `getObjectMetadata.getContentLength` method to find the length of the file in bytes. With min=0 and max=lengthOfFile, we can perfomr a binary search as follows:
+
+```
+search - desired element
+
+while(min<max){
+
+  middle = (min+max)/2
+
+  direction = middle.compareTo(search)
+
+  if(direction == 0) found!
+  if(direction > 0) min = middle
+  if(direction < 0) max = middle
+  
+}
+```
+
+With an added tweak that, when reading the middle of a file using byte range and a length, the message could be starting from the midddle like this - "abcabc (interval): abcabc". So we iterate through this constant length to locate the interval within the partially read line and use it to get the comparison value for our binary search.
+
+Since this is a constant factor, O(findLogs) = m.log(n) where m is the maximum length of the log message and n is the number of log messages across all files. And, because m << n, we can say that O(findLogs) ~= log(n).
+
+Also, another detail is that we are using the hash lookup to locate the files we need to access for our search interval. The search files are aggregated here at hourly level. So if our interval + delta is as follows: "2021-11-05 22:59:50" delta=30, then the hourly files we have to lookup are - 2021-11-05 22:00 and 2021-11-05 23:00.
+
+Here we can use the hash lookup to quickly determine if we have any log file in that hourly interval, and only if we have a file, we use binary search to check if there are any log messages present.
+
+Also, when the search interval spans multiple files, there are three cases:
+
+* For the first file, we read from some interval in the middle to the end of that file
+* For all inbetween files, we read them completely as all the messages fall into the interval
+* For the last file, we read from the beginning to the middle where the end interval occurs
+
+This functionality for search interval across multiple files has been implemented, but was tested.
+
+#### Log Generator
+
+The log generator was deployed to EC2 and the log files generated were moved to S3 buckets. A lambda function that triggers when ".log" files get uploaded to S3 was used to update the Hash lookup. Currently, the log files were moved indirectly to the S3 buckets.
+
+An implementation using logback framework was considered similar to the approach specified (here)[https://github.com/mweagle/Logpig] by extending the existing `TimeBasedRollingWindowPolicy` class of the logback framework, but ultimately it was not implemented.
+
+### Demo
+Please find the youtube demo (here)[https://www.youtube.com/watch?v=mnjlwxpp39I&feature=youtu.be]
+
+### Deployment
+
+The lambda function is deployed at this endpoint: `https://6hywkax1t9.execute-api.us-east-2.amazonaws.com/prod/`
+
+Logsearch can be performed by making the following request - `https://6hywkax1t9.execute-api.us-east-2.amazonaws.com/prod/findlogs?interval="2021-10-19 23:37:14"&delta=10`
+
+The current log files in S3 are from 2021-10-19 between 23:37:11 and 23:37:59; and 2021-11-05 between 01:28:57 and 01:33:23.
 
 ### References
 
+Some useful resources for the development:
+
+* This stackoverflow (discussion)[https://stackoverflow.com/questions/10010151/how-to-perform-a-binary-search-of-a-text-file] that gave the idea for the random search that was modifed for the purpose of S3. The solution that was used was actually the last response that was not the accepted answer.
+* (Reference)[https://docs.aws.amazon.com/code-samples/latest/catalog/java-s3-src-main-java-aws-example-s3-GetObject2.java.html
+(4 liked)EditedGetObject2.java - AWS Code SampleGetObject.java demonstrates several ways to retrieve an entire or partial S3 object.docs.aws.amazon.com<https://teams.microsoft.com/l/message/19:6438a8ea7fdd42a8961ef47f84440f1a@thread.tacv2/1636152853301?tenantId=e202cd47-7a56-4baa-99e3-e3b71a7c77dd&amp;groupId=2892ac01-d5be-4bbd-8632-41431594f310&amp;parentMessageId=1636128991541&amp;teamName=O365-CS441-Fall2021&amp;channelName=Homework3&amp;createdTime=1636152853301>] for S3 file operations
+* ScalaPB Grpc client server (example)[https://scalapb.github.io/docs/getting-started]
+* Followed (this)[https://www.baeldung.com/scala/finch-rest-apis] guide in creating the Finch server
